@@ -12,4 +12,4 @@ EXPOSE 30303/udp
 VOLUME /root/.ethereum
 
 # To run a rinkeby light node:
-CMD geth --fast --rinkeby --datadir=$HOME/.rinkeby --rpc --rpcapi="eth,network,web3" --rpcaddr "0.0.0.0" --rpccorsdomain "*"
+CMD geth --fast --datadir=$HOME/.ethereum --rpc --rpcapi="eth,network,web3" --rpcaddr "0.0.0.0" --rpccorsdomain "*"
